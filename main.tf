@@ -60,8 +60,8 @@ resource "azurerm_linux_virtual_machine" "example" {
   resource_group_name = azurerm_resource_group.terraform.name
   size                = "Standard_B1s"
   disable_password_authentication = false
-  admin_username      = "azureuser"
-  admin_password      = "Password1234!"
+  admin_username      = ""
+  admin_password      = ""
   network_interface_ids = [
     azurerm_network_interface.my_nic.id,
   ]
